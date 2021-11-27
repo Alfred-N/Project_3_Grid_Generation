@@ -6,6 +6,10 @@ VerticalLine::VerticalLine(double x_pos, double a, double b) : Curvebase(a, b), 
 	//cout << length_ << endl;
 }
 
+VerticalLine::~VerticalLine()
+{
+}
+
 double VerticalLine::xp(double p)
 {
 	return _x_pos;

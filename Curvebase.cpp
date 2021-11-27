@@ -49,7 +49,6 @@ double Curvebase::newton(double s, double guess, const double &tol)
 
 Curvebase::~Curvebase()
 {
-	//TODO
 }
 
 double Curvebase::arclen_integrand(double p)

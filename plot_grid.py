@@ -8,8 +8,8 @@ os.chdir("Grids")
 # df_x = pd.read_csv("naive_grid_x.csv", header=None)
 # df_y = pd.read_csv("naive_grid_y.csv", header=None)
 
-df_x = pd.read_csv("grid_mn_7_x.csv", header=None)
-df_y = pd.read_csv("grid_mn_7_y.csv", header=None)
+# df_x = pd.read_csv("grid_mn_7_x.csv", header=None)
+# df_y = pd.read_csv("grid_mn_7_y.csv", header=None)
 
 # df_x = pd.read_csv("grid_mn_10_x.csv", header=None)
 # df_y = pd.read_csv("grid_mn_10_y.csv", header=None)
@@ -26,8 +26,8 @@ df_y = pd.read_csv("grid_mn_7_y.csv", header=None)
 # df_x = pd.read_csv("grid_mn_50_50_x.csv", header=None)
 # df_y = pd.read_csv("grid_mn_50_50_y.csv", header=None)
 
-# df_x = pd.read_csv("grid_mn_100_100_x.csv", header=None)
-# df_y = pd.read_csv("grid_mn_100_100_y.csv", header=None)
+df_x = pd.read_csv("grid_mn_100_100_x.csv", header=None)
+df_y = pd.read_csv("grid_mn_100_100_y.csv", header=None)
 
 xx = df_x.iloc[:,:-1].to_numpy()
 yy = df_y.iloc[:,:-1].to_numpy()
@@ -36,5 +36,6 @@ print(yy)
 
 plt.plot(xx,yy, "c")
 plt.plot(xx.transpose(),yy.transpose(), "c")
+# plt.axis('off')
 
 plt.show()

@@ -6,6 +6,10 @@ HorizontalLine::HorizontalLine(double y_pos, double a, double b) : Curvebase(a, 
 	//cout << length_ << endl;
 }
 
+HorizontalLine::~HorizontalLine()
+{
+}
+
 double HorizontalLine::xp(double p)
 {
 	return p;

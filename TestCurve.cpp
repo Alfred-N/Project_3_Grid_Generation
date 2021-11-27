@@ -6,15 +6,17 @@ TestCurve::TestCurve(double a0, double a1, double a, double b) :
 	this->reverese();
 }
 
+TestCurve::~TestCurve()
+{
+}
+
 double TestCurve::xp(double p)
 {
-	//TODO check a<p<b
 	return p;
 }
 
 double TestCurve::yp(double p)
 {
-	//TODO check a<p<b
 	return a0_ * sqrt(p) + a1_ * p;
 }
 

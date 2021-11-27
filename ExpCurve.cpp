@@ -4,6 +4,10 @@ ExpCurve::ExpCurve(double a, double b) : Curvebase(a, b)
 	this->reverese();
 }
 
+ExpCurve::~ExpCurve()
+{
+}
+
 double ExpCurve::xp(double p)
 {
 	return p;
