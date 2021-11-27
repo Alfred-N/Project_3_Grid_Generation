@@ -2,19 +2,39 @@
 //
 
 #include <iostream>
+#include "Header.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //double s = 0.3;
+
+    /*TestCurve a = TestCurve(1, -1, 0, 1);
+    double xs = a.x(s);
+    cout << "x(s) = " << xs << endl;
+    double ys = a.y(s);
+    cout << "y(s) = " << ys << endl;*/
+
+    //ExpCurve c = ExpCurve(5, -10);
+    //ExpCurve c = ExpCurve(-10, 5);
+    //double ys = c.y(s);
+    //VerticalLine v = VerticalLine(0, 3);
+    //VerticalLine v = VerticalLine(3, 0);
+    //double ys = v.y(s);
+
+    //cout << "y(s) = " << ys << endl;
+    //HorizontalLine h = HorizontalLine(-10, 5);
+
+    ExpCurve c = ExpCurve(-10, 5);
+    VerticalLine v1 = VerticalLine(5, 0, 3);
+    HorizontalLine h = HorizontalLine(3, 5, -10);
+    VerticalLine v2 = VerticalLine(-10, 3, 0);
+
+    Domain dom = Domain(c, v1, h, v2);
+    //dom.generate_grid_naive(3, 4);
+    dom.generate_grid(7, 7);
+    //string str = dom.print_grid('y');
+    //cout << str << endl;
+    dom.save_as_csv("Grids/grid_mn_7");
+
+    return EXIT_SUCCESS;    
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
