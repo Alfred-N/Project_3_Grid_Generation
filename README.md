@@ -1,4 +1,4 @@
-# Project 3 SF2565 Course
+# Project 3 - Grid Generation
 Project 3 for SF2565 Program Construction in C++ for Scientific Computing
 ### Description
 This project consists of a C++ implementation for the generation of structured boundary-fitted grids that can be used for solving PDEs in any two-dimensional coordinate representation 
